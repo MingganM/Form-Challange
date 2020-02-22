@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="container">
+
+        <form class="form">
+
+            <!-- STEP 1 -->
+            <div class="step">
+                <span class="tick">
+                    &#10004; <!-- Tick Mark -->
+                </span>
+
+                <div class="step__info" data-step="1">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+
+                    <button class="continue" data-to=2>Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step">
+                <span class="tick">
+                    &#10004; <!-- Tick Mark -->
+                </span>
+
+                <div class="step__info" data-step="2">
+                    <label for="email">Email</label>
+                    <input type="email" required id="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" required id="password">
+
+                    <button class="continue" data-to=3>Continue</button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step" >
+                <span class="tick">
+                    &#10004; <!-- Tick Mark -->
+                </span>
+
+                <div class="step__info" data-step="3">
+
+                    <article class="policy">
+                        <input type="checkbox" id="policyCheck">
+                        <p class="policy__text">To Sign Up, You have to <br> agree with our privacy policy.</p>
+                    </article>
+
+                    <button class="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

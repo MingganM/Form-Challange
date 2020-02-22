@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+:root{
+    --white:white;
+    --black:black;
+    --skyBlue:#89ABE3FF;
+    --additional:rgb(0, 42, 83);
+    --grey:grey;
+}
+
+input{
+    padding:0.5rem 1rem;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+    background: var(--white);
+    border: 1px solid gray;
+}
+label{
+    margin-bottom:0.3rem;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-color:rgba(228, 228, 228, 0.87);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --------FORM-------- */
+.form{
+    background: var(--white);
+    padding:8rem 12rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1rem 2rem var(--grey);
+    position: relative;
+    overflow: hidden;
+}
+/* --------step---------- */
+.step{
+    display: flex;
+    align-items: center;
+    margin:1rem auto;
+}
+
+/* --------tick---------- */
+.tick{
+    align-self: start;
+    display: inline-block;
+    font-size:3rem;
+    color:var(--skyBlue);
+    padding:0.5rem 1.2rem;
+    border: 2px solid var(--skyBlue);
+    border-radius: 50%;
+    cursor:default;
+    transition:0.2s;
+}
+/* ---------step__info--------- */
+.step__info{
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    font-size:1.5rem;
+    margin-left:3.5rem;
+}
+.continue,.submit{
+    background: transparent;
+    border:1px solid var(--skyBlue);
+    font-size:2rem;
+    margin:1rem auto;
+    padding:0.8rem 1.6rem;
+    border-radius: 0.2rem;
+    color:var(--skyBlue);
+    cursor: pointer;
+}
+
+/* -----Policy----- */
+.policy{
+    display:flex;
+    align-items: center;
+    margin:2rem 0;
+}
+.policy__text{
+    font-size:1.4rem;
+}
+#policyCheck{
+    margin-right:1rem;
+}
+/* -------------RESPONSIVE---------- */
+@media screen and (max-width:37.5em){
+    html{
+        font-size: 50%;
+    }
+    .form{
+        width:100%;
+        height:100%;
+    }
+}
+/* CLASSES TO ADD */
+.step__info-hide{
+    border-top:1px solid var(--skyBlue);
+    height:0;
+    overflow: hidden;
+}
+.step__info-hide input{
+    visibility: hidden;
+}
+
+.tick-filled{
+    color:var(--white);
+    background-color:var(--skyBlue);
+}
+
+.button-filled{
+    color:var(--white);
+    background-color:var(--skyBlue);
+}
+
+.warn{
+    border:1px solid rgb(184, 0, 0);
+}
